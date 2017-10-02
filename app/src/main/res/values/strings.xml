@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ARROWSmartController</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="list_of_devices">List of Smart Devices in Bluetooth range (~15m):</string>
+    <string name="ble_not_supported">BLE is not supported on this Device</string>
+</resources>

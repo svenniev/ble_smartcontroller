@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arrow.a79361.arrowsmartcontroller.ConnectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BLE Demo devices in Bluetooth range:"
+            android:id="@+id/textView3"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#222222"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="NEW:"
+                android:id="@+id/textView4"
+                android:textSize="20dp"
+                android:textColor="#CCCCCC"
+                android:layout_margin="5dp" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/lvNewDevices"
+                android:layout_weight="32"
+                android:background="#CCCCCC"
+                android:divider="#FF5511"
+                android:dividerHeight="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Discovered:"
+                android:id="@+id/textView5"
+                android:textSize="20dp"
+                android:textColor="#CCCCCC"
+                android:layout_margin="5dp" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/lvDiscItems"
+                android:layout_weight="32"
+                android:background="#DDDDDD"
+                android:divider="#352500"
+                android:dividerHeight="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Bluetooth status"
+            android:id="@+id/textViewBTState"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.001">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:id="@+id/buttonScan"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:backgroundTint="#000000"
+                android:textColor="#BABABA" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

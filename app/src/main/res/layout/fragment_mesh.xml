@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arrow.a79361.arrowsmartcontroller.MeshFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#333333">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Reliable package:"
+                android:id="@+id/textView2"
+                android:layout_margin="10dp"
+                android:textColor="#CCCCCC"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Reliable"
+                android:id="@+id/bSetRel"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:backgroundTint="#000000"
+                android:textColor="#BABABA" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Non-reliable"
+                android:id="@+id/bSetUnrel"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:backgroundTint="#000000"
+                android:textColor="#BABABA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fade Time:"
+                android:id="@+id/textView6"
+                android:textColor="#CCCCCC"
+                android:textSize="20dp"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Set to"
+                android:id="@+id/bSetFade"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:backgroundTint="#000000"
+                android:textColor="#BABABA" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#000000">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Luminous flux:"
+                    android:id="@+id/textView22"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="1650 [lm]"
+                    android:id="@+id/tLum"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="CCT:"
+                    android:id="@+id/textView24"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="3811 [K]"
+                    android:id="@+id/tCct"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Temperature:"
+                    android:id="@+id/textView26"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="55 [C]"
+                    android:id="@+id/tTemp"
+                    android:layout_weight="1"
+                    android:textColor="#CCCCCC"
+                    android:gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
